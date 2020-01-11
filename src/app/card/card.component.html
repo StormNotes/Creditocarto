@@ -1,0 +1,40 @@
+
+<div class="introduction">
+    <h1>Are you ready to waste down  your new C-Card?</h1>
+</div>
+<div  class="cardFront container" id="card">
+    <div class="top-card">
+        <h2>CREDIT CARD</h2>
+        <img src="../../assets/Images/visa.svg" alt="">
+    </div>
+
+    <div class="number">
+        <p>Card number :</p>
+        <h1>XXXX-XXXX-XXXX-XXXX</h1>
+    </div>
+    <div class="card-date">
+        <span>
+            VALID THRU  : xx/XX
+        </span>
+      
+    </div>
+    <div class="card-user">
+        <h3><span>First name : </span>{{fullName}}</h3>
+        <h3><span>Last name : </span>{{Lastnames}}</h3>
+    </div>
+    
+</div>
+    <div  class="cardFlip container" id="cardFliped">
+        <h2>Probably you should not be digging for a new credit card...</h2>
+        <h2>Why don't you pay your old ones first? then we can talk business.</h2>
+    </div>
+
+
+
+<div class="form-component">    
+    <div class="form-content">
+        <input [(ngModel)]="fullName" placeholder="First name"/> <br/><br/>    
+        <input [(ngModel)]="Lastnames" placeholder="Second name"/> <br/><br/>
+        <input type="submit" (click)="clickMe()">
+    </div>
+</div>

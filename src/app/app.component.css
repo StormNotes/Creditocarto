@@ -1,0 +1,15 @@
+#header{
+    margin: 0;
+    padding: 0;
+    background-color: #6a7bb8;
+}
+
+#header h2{
+    margin: 0;
+    padding: 22px;
+    color:whitesmoke
+}
+
+#header h2:hover{
+    cursor: pointer;
+}

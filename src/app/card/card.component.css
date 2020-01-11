@@ -1,0 +1,106 @@
+.container{
+    border-radius: 12px;
+    content:'';
+    margin: 20px auto;
+    width: 460px;
+    background: #4d6995;
+    height: 260px;
+}
+
+.introduction{
+    margin: auto;
+    width: 100%;
+}
+.introduction h1{
+    padding: 25px;
+    text-align: center;
+
+}
+
+
+.cardFront,.cardFlip{
+    backface-visibility: hidden;
+    transition: all 1.2s ease-in-out;
+}
+.cardFront{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.cardFlip{
+    transform: perspective(600px) rotateY(0deg);
+}
+.top-card{
+    display: flex;
+    justify-content: space-between;
+}
+.top-card h2{
+    color:whitesmoke;
+    padding: 20px;
+    font-size: 22px;
+}
+.top-card img{
+   padding: 12px;
+   height:50px;
+}
+
+.number {
+    padding: 16px;
+    color:whitesmoke;
+}
+
+.card-user{
+    padding: 20px;
+    color:whitesmoke;
+}
+
+.card-user h3 span{
+    font-size: 80%;
+    font-weight: normal;
+
+}
+.card-date span{
+    padding: 20px;
+    color:whitesmoke;
+}
+.form-component{
+    display:flex;
+    justify-content:space-around;
+    width: 100%;
+}
+
+.form-component input{
+    margin: 20px;
+    padding: 20px;
+    border: solid 1px #4d6995;
+    border-radius: 14px;
+}
+
+.form-content{
+    display: flex;
+}
+
+.cardFront.fliped {    
+    transform: rotateY(-160deg);
+    
+}
+
+
+
+.cardFlip{
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%)  rotateY(-160deg);
+}
+.cardFlip h2{
+    padding: 20px;
+    color:whitesmoke;
+}
+
+
+.true{
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%)  rotateY(0deg);
+}
