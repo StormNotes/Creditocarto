@@ -19,8 +19,8 @@
 
 
 .cardFront,.cardFlip{
-    backface-visibility: hidden;
     transition: all 1.2s ease-in-out;
+    backface-visibility: hidden;
 }
 .cardFront{
     transform: perspective(600px) rotateY(0deg);
@@ -68,7 +68,7 @@
     width: 100%;
 }
 
-.form-component input{
+.form-component input, button{
     margin: 20px;
     padding: 20px;
     border: solid 1px #4d6995;
@@ -79,28 +79,25 @@
     display: flex;
 }
 
-.cardFront.fliped {    
-    transform: rotateY(-160deg);
-    
-}
 
 
-
-.cardFlip{
+.cardFlip{    
+    /* display: none; */
     position: absolute;
-    top:45%;
+    top:37%;
     left:50%;
-    transform: translate(-50%,-50%)  rotateY(-160deg);
+    transform: translate(-50%,-50%) rotateY(160deg);
 }
 .cardFlip h2{
+    text-align: center;
     padding: 20px;
     color:whitesmoke;
 }
 
+.frontFliped {    
+    transform: rotateY(-160deg);
+}
 
-.true{
-    position: absolute;
-    top:45%;
-    left:50%;
-    transform: translate(-50%,-50%)  rotateY(0deg);
+.backFliped{
+    transform: translate(-50%,-50%) rotateY(-0deg);
 }

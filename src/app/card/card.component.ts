@@ -6,13 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  
+
+  username = document.getElementById('username')
+
+  if(username){
+
+  }
+
+
+
   clickMe() {
-    var cardo = document.getElementById("card");
-    var cardoFliped = document.getElementById("cardFliped");
-    cardo.classList.add("fliped");
-    cardoFliped.classList.add(".true");
-    cardoFliped.classList.remove(".cardFlip")
+    let cardo = document.getElementById("card");
+    let cardBack = document.getElementById("cardFliped")
+    cardo.classList.toggle("frontFliped");
+    cardBack.classList.toggle("backFliped")
   }
 
 

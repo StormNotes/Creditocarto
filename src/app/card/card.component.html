@@ -25,16 +25,16 @@
     
 </div>
     <div  class="cardFlip container" id="cardFliped">
-        <h2>Probably you should not be digging for a new credit card...</h2>
-        <h2>Why don't you pay your old ones first? then we can talk business.</h2>
+        <h2>Mr or Mrs... uhm " {{fullName}} ", You should rather first pay all your debts...  Why don't you pay your old ones first? then we can talk business. </h2>
+       
     </div>
 
 
 
 <div class="form-component">    
     <div class="form-content">
-        <input [(ngModel)]="fullName" placeholder="First name"/> <br/><br/>    
+        <input id="username" [(ngModel)]="fullName" placeholder="First name"/> <br/><br/>    
         <input [(ngModel)]="Lastnames" placeholder="Second name"/> <br/><br/>
-        <input type="submit" (click)="clickMe()">
+        <button id="button-hover" type="submit" (click)="clickMe()">Get my card!</button>
     </div>
 </div>
