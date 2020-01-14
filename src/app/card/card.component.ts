@@ -5,31 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent implements OnInit {
-
-  username = document.getElementById('username')
-
-  if(username){
-
-  }
-
-
-
+export class CardComponent {
+  formName = document.getElementById('user');
+  username = document.getElementById('username');
+  
+  
+  
+  
   clickMe() {
+    
     let cardo = document.getElementById("card");
     let cardBack = document.getElementById("cardFliped")
     cardo.classList.toggle("frontFliped");
     cardBack.classList.toggle("backFliped")
   }
-
-
-  constructor() {
-    
-   }
-
-  ngOnInit() {
-  }
   
-
+  
 }
+
 

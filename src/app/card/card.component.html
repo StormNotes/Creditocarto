@@ -19,22 +19,21 @@
       
     </div>
     <div class="card-user">
-        <h3><span>First name : </span>{{fullName}}</h3>
+        <h3 id="user"><span>First name : </span>{{fullName}}</h3>
         <h3><span>Last name : </span>{{Lastnames}}</h3>
     </div>
     
 </div>
     <div  class="cardFlip container" id="cardFliped">
         <h2>Mr or Mrs... uhm " {{fullName}} ", You should rather first pay all your debts...  Why don't you pay your old ones first? then we can talk business. </h2>
-       
     </div>
 
-
+    <p style="text-align:center"><strong>Please</strong> Add your First name and so your Last name to proceed</p>
 
 <div class="form-component">    
     <div class="form-content">
-        <input id="username" [(ngModel)]="fullName" placeholder="First name"/> <br/><br/>    
+        <input type="string" id="username" [(ngModel)]="fullName" placeholder="First name" /> <br/><br/>    
         <input [(ngModel)]="Lastnames" placeholder="Second name"/> <br/><br/>
-        <button id="button-hover" type="submit" (click)="clickMe()">Get my card!</button>
+        <button id="button-hover" type="submit" (click)="clickMe()" (ngModelChange)="doSomething(event)">Get my card!</button>
     </div>
 </div>
